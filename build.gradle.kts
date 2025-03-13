@@ -28,6 +28,7 @@ plugins {
 group = properties("pluginGroup").get()
 version = properties("pluginVersion").get()
 val lsp4ijVersion = "0.7.0"
+val zoweExplorerVersion = "2.1.0-233"
 
 repositories {
   mavenCentral()
@@ -37,10 +38,12 @@ repositories {
   }
 }
 
+
 java {
   sourceCompatibility = JavaVersion.VERSION_17
   targetCompatibility = JavaVersion.VERSION_17
 }
+
 
 kotlin {
   jvmToolchain {
@@ -73,6 +76,9 @@ dependencies {
 ////  }
     plugin("com.redhat.devtools.lsp4ij:$lsp4ijVersion")
     testFramework(TestFrameworkType.Plugin.Java)
+//    plugin("org.zowe.explorer:$zoweExplorerVersion")
+//    localPlugin("..\\..\\zowe-explorer-intellij\\build\\distributions\\zowe-explorer-2.1.0-2023.1.7.zip")
+    localPlugin("C:\\Users\\varte\\Documents\\University\\Year 4 Sem. 2\\4475\\zowe-explorer-intellij\\build\\distributions\\zowe-explorer-2.1.0-2023.3.zip")
   }
   // Gson
   implementation(libs.gson)

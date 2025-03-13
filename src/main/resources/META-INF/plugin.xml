@@ -10,6 +10,7 @@
   <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
   <vendor email="zowe.robot@gmail.com" url="https://github.com/zowe/zowe-cobol-intellij">Zowe</vendor>
 
+
   <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
        Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
        Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
@@ -22,6 +23,7 @@
   <depends>com.intellij.modules.platform</depends>
   <depends>com.redhat.devtools.lsp4ij</depends>
   <depends>org.jetbrains.plugins.textmate</depends>
+  <depends>org.zowe.explorer</depends>
 
   <extensions defaultExtensionNs="com.intellij">
     <notificationGroup displayType="STICKY_BALLOON"

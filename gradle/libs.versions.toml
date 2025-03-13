@@ -6,7 +6,7 @@ mockk = "1.13.13"
 junit = "1.11.3"
 
 # plugins
-gradle = "2.1.0"
+gradle = "2.3.0"
 kotlinJvm = "1.9.22"
 kover = "0.8.3"
 
